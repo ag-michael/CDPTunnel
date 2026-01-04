@@ -1,0 +1,4 @@
+mode: server
+debug: true
+httpserver: 127.0.0.1:8080 # This is the LHOST:LPORT for the c2 params
+remotetunnel: 127.0.0.1:9999 # this should be the ip of the remote c2/redirector
