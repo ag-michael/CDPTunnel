@@ -1,11 +1,12 @@
 # CDPTunnel
 CDPTunnel is a tool that routes HTTP traffic (redteam/c2) via the Chrome DevTools Protocol (CDP) of a web browser.
 
+[Blog post with example usage](https://ag-michael.github.io/04.html)
 ## When would CDPTunnel be useful?
 
 CDPTunnel is useful in scenarios where the client program communicating directly with an internet destination is undersirable or restricted, whereas not so much for web-browsers.
 
-Example scenarios:
+***Example scenarios:***
   - EDR/AV tools are restrictive or aggressively detecting unusual processes connecting to the internet
   - Network policy restrictions enforced at the process or traffic-signature level
   - Network restrictions require users interacting with or clicking-through captive-portal pages to access some destinations (e.g.: Block-Continue type IDS/Firewall rules)
@@ -17,7 +18,7 @@ Example scenarios:
 CDPTunnel by default attempts to load configuration from `settings.yaml` in the same directory it is in.
 If a comand-line argument is present, the first argument is treated a settings Yaml file, and it will be loaded.
 
-Examples:
+***Examples:***
 
 `cdptunnel.exe`
 
